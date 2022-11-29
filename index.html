@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="/scripts/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="/map_files/community.js"></script>
+    <script src="/map_files/streets.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+    <!-- <script src="/scripts/main.js"></script> -->
     <link href="/styles/main.css" rel="stylesheet" />
 
     <title>Project 3: CS-424 UIC</title>
@@ -18,12 +24,13 @@
     </div>
 
     <div class="introduction">
-        <p>
+        <p id="para-1">
             Selecting a school to send their young ones to is one of the most crucial 
             decisions in parents' lives. School life is an integral part of children's 
             lives and is vital for their academic and personal growth. While making 
             this decision, parents consider a variety of factors. These include:
         </p>
+            
             <ul>
                 <li>Academic Programs</li>
                 <li>Quality of academic personnel</li>
@@ -32,18 +39,32 @@
                 <li>Location</li>
                 <li>Cost</li>
             </ul>
-        <p>
+        
+        <p id="para-2">
             In light of the rise in school shootings in recent years
             <a href="https://www.edweek.org/leadership/school-shootings-this-year-how-many-and-where/2022/01">
             (on a 2022 study)</a>, we decided to evaluate schools in the City of Chicago School District 
             based on the crimes around these schools to assist parents in their 
             decision-making process.
         </p>
+    
+        <p>
+            Follow us along this journey and let us know what you think about the visualization system. 
+            Cheers !!
+        </p>
     </div>
 
-    <div class="map">
-        <p>Map Here</p>
+    <div id="crimes_explore">
+        <p id="para-1">
+            Let's explore the variation of crimes across the communities of Chicago for the last 5 years.
+        </p>
+    
+        <div id="chicago-map"></div>
+        <div id="single-community"></div>
+        <div id="comparison"></div>
+
     </div>
+
 </body>
 </html>
 
