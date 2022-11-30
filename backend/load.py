@@ -14,4 +14,4 @@ def load_data(dir):
 if __name__ == "__main__":
     dir = "/Datasets/Assignment 3/raw_crimes.csv"
     data = load_data(dir)
-    clean_data(type_="Sexual Assault", data=data)
+    clean_data(data=data)

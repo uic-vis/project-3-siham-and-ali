@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
     <script src="/map_files/community.js"></script>
     <script src="/map_files/streets.js"></script>
+    <!-- <script type="module" src="/scripts/basechart.js"></script> -->
+    <!-- <script type="module" src="/scripts/barchart.js"></script>
+    <script type="module" src="/scripts/linechart.js"></script> -->
     <script type="module" src="/scripts/main.js"></script>
     <!-- <script src="/scripts/main.js"></script> -->
     <link href="/styles/main.css" rel="stylesheet" />
@@ -48,21 +52,44 @@
             decision-making process.
         </p>
     
-        <p>
+        <p id="para-3">
             Follow us along this journey and let us know what you think about the visualization system. 
             Cheers !!
         </p>
     </div>
 
-    <div id="crimes_explore">
+    <div class="crimes-explore">
+        <!-- Add animation for this paragraph, such that after the user scrolls,
+             only then will the maps show up. -->
         <p id="para-1">
-            Let's explore the variation of crimes across the communities of Chicago for the last 5 years.
+            Let's explore the total variation of crimes across the communities of Chicago
+            for the last 5 years (2017-2022).
         </p>
-    
-        <div id="chicago-map"></div>
-        <div id="single-community"></div>
-        <div id="comparison"></div>
 
+        <p id="para-2">
+            <ul>
+                <li>On the left, there is a map of the city of Chicago. On the top right corner
+                    of the map exists a control panel. Using this control panel, you can choose
+                    what data needs to be displayed on the map. You can click on any community
+                    you like to update the bar charts and develop insight.
+                </li>
+                <li>On the right, there is a bar chart which will display the
+                    different types of crimes along with their count for the selected community.
+                </li>
+                <li>Below these plots exists a comparison chart. This chart will allow you to compare
+                    communities that you previously selected with the current one. 
+                </li>
+            </ul>
+        </p>
+
+        <!-- Add all the text to  animation, after which the graphs will show. -->
+    
+        <!-- Fix this map in one position -->
+        <div class="project-1">
+            <div id="chicago-map"></div>
+            <div id="single-community"></div>
+            <div id="comparison"></div>
+        </div>
     </div>
 
 </body>
@@ -78,6 +105,8 @@ https://www.greatschools.org/school-district-boundaries-map/
 https://www.greatschools.org/illinois/chicago/city-of-chicago-school-district-299/
 https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Profile-Information-/9a5f-2r4p
 https://data.cityofchicago.org/Education/Chicago-Public-Schools-Safe-Passage-Routes-SY2122/mnq7-pv6v
+https://bl.ocks.org/sngrasso/d3a35678a675d3b5d738f9d556bbb35e
+https://d3-legend.susielu.com/
 
 
 -->

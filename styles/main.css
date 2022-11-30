@@ -40,6 +40,44 @@ html {
     margin-top: 2%;
 }
 
+.crimes-explore p {
+    text-align: justify;
+    font-size: 20px;
+    padding-right: 13%;
+    padding-left: 13%;
+}
+
+/* Margin not changing */
+.crimes-explore #para-1 {
+    margin-top: 30px;
+}
+
+.crimes-explore ul {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-top: 2%;
+}
+
+.crimes-explore #chicago-map {
+    float: left;
+    margin-left: 20px;
+}
+
+.crimes-explore #single-community {
+    float: right;
+    margin-left: 10px;
+    margin-right: 150px;
+}
+
+.crimes-explore #comparison {
+    float: left;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
 .leaflet-container {
     width:500px;
     height:700px;

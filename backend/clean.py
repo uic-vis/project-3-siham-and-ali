@@ -1,9 +1,22 @@
 import common_mods as cm
 
 
-def clean_data(type_, data):
+def clean_data(data, type_=None):
     init_data = preprocess_data(data)
     subset_data = get_subset(init_data, 2017, 2022)
+
+    if type_ is None:
+        cleaned_data_1 = clean_theft(subset_data)
+        cleaned_data_2 = clean_narcotics(subset_data)
+        cleaned_data_3 = clean_weapons(subset_data)
+        cleaned_data_4 = clean_kidnapping(subset_data)
+        cleaned_data_5 = clean_sexual_assault(subset_data)
+        frames = [cleaned_data_1, cleaned_data_2, cleaned_data_3,
+                  cleaned_data_4, cleaned_data_5]
+        result = cm.pd.concat(frames)
+        print(result.value_counts(['Primary Type', 'Description']))
+
+        save_data_json("Total", columns_update(result))
 
     if type_ == "Theft":
         cleaned_data = clean_theft(subset_data)
