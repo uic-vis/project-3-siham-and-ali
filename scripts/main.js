@@ -6,13 +6,14 @@ import kidnapping_data from "../Kidnapping.json" assert {type: 'json'};
 import sexual_assault_data from "../Sexual Assault.json" assert {type: 'json'};
 import {BarChart} from './barchart.js';
 import {LineChart} from './linechart.js';
+import {create_visualtizations_2} from './project3.js';
 
 let current_layer_val;
 let current_layer;
 let current_data;
 let current_value_count;
 
-let margin = {top: 50, right: 50, bottom: 50, left: 50};
+let margin = {top: 50, right: 0, bottom: 50, left: 50};
 let chart_width = 600;
 let chart_height = 500;
 
@@ -41,10 +42,10 @@ function create_visualtizations() {
     var base_layer = L.geoJson(communityData, {style: {
                 fillColor: "white",
                 weight: 0.5,
+                fillOpacity: 1.0,
                 color: "black",
             }}).addTo(map);
 
-    // VERFIY PLOTS LATER BY CHECKING WITH GUNS DATA PLOT FROM 2001
     // ADD STREETS DATA LATER
     var total_crimes_layer = L.geoJson(communityData, {onEachFeature: selection});
     var theft_layer = L.geoJson(communityData, {onEachFeature: selection});
@@ -155,8 +156,7 @@ function create_visualtizations() {
         layer.on({
             mouseover: highlight_community,
             mouseout: reset_highlight,
-            click: zoom_in,
-            mouseup: zoom_out
+            click: zoom_in
         });
     }
 
@@ -178,7 +178,7 @@ function create_visualtizations() {
 
     function zoom_in(feature) {
         bar_chart_svg.selectAll("*").remove();
-        map.setView([feature.latlng.lat, feature.latlng.lng], 13)
+        // map.setView([feature.latlng.lat, feature.latlng.lng], 13)
 
         var layer = feature.target;
         layer.bindPopup("Community Name:" + layer.feature.properties.community + '<br />' +
@@ -193,14 +193,11 @@ function create_visualtizations() {
         community_history.add(layer.feature.properties)
         line_chart.add_data(community_history)
     }
-
-    function zoom_out(feature) {
-        map.setView([41.8338, -87.7327], 10);
-    }
 }
 
 function init() {
     create_visualtizations()
+    create_visualtizations_2()
 }
 
 window.onload = init;

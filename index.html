@@ -11,15 +11,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
     <script src="/map_files/community.js"></script>
     <script src="/map_files/streets.js"></script>
-    <!-- <script type="module" src="/scripts/basechart.js"></script> -->
-    <!-- <script type="module" src="/scripts/barchart.js"></script>
-    <script type="module" src="/scripts/linechart.js"></script> -->
+    <script src="/map_files/schools.js"></script>
+    <script src="/map_files/comm_zipcode.js"></script>
+    <script type="module" src="/scripts/project3.js"></script>
     <script type="module" src="/scripts/main.js"></script>
-    <!-- <script src="/scripts/main.js"></script> -->
     <link href="/styles/main.css" rel="stylesheet" />
 
     <title>Project 3: CS-424 UIC</title>
 </head>
+
 <body>
     <div class="header">
         <h1>Which school is best for my child?</h1>
@@ -68,23 +68,23 @@
 
         <p id="para-2">
             <ul>
-                <li>On the left, there is a map of the city of Chicago. On the top right corner
+                <li>
+                    On the left, there is a map of the city of Chicago. On the top right corner
                     of the map exists a control panel. Using this control panel, you can choose
                     what data needs to be displayed on the map. You can click on any community
                     you like to update the bar charts and develop insight.
                 </li>
-                <li>On the right, there is a bar chart which will display the
+                <li>
+                    On the right, there is a bar chart which will display the
                     different types of crimes along with their count for the selected community.
                 </li>
-                <li>Below these plots exists a comparison chart. This chart will allow you to compare
+                <li>
+                    There also exists a comparison chart. This chart will allow you to compare
                     communities that you previously selected with the current one. 
                 </li>
             </ul>
         </p>
 
-        <!-- Add all the text to  animation, after which the graphs will show. -->
-    
-        <!-- Fix this map in one position -->
         <div class="project-1">
             <div id="chicago-map"></div>
             <div id="single-community"></div>
@@ -92,10 +92,69 @@
         </div>
     </div>
 
-</body>
-</html>
+    <!-- Add all the text to  animation, after which the graphs will show. -->
 
+    <div class="explore-schools">
+        <p id="para-1">
+            Now, that you have explored some communities and perhaps even created a list of
+            possible options, let us explore the schools in these communities and evaluate the
+            crime rates and distribution in the vicinity of each of them.
+        </p>
 
+        <p id="para-2">
+            <ul>
+                <li>
+                    On the top, you will see, 2 drop down menus where you can choose the
+                    parameters for the visualiztion.
+                </li>
+                <li>
+                    Below these buttons, you will see yet another map of the city of chicago, however this time,
+                    when you click on a community, the schools that are present in that community
+                    along with the crime distribution will be shown on the map adjacent to it.
+                </li>
+            </ul>
+        </p>
+
+        <p id="para-3"> Go ahead and explore ;) </p>
+        
+        <div id="dropdown">
+            <label for="months">Select any Month:</label>
+            <select name="months" id="months">
+            <option> ---Choose a Month--- </option> 
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="aug">August</option>
+            <option value="sept">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+            </select>
+
+            <label for="years">Select any Year:</label>
+            <select name="years" id="years">
+            <option> ---Choose a year--- </option> 
+            <option value="17">2017</option>
+            <option value="18">2018</option>
+            <option value="19">2019</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            </select>
+        </div>
+
+        <div class="project-3">
+            <div id="chicago-map-2"></div>
+            <div id="single-community-zoom"></div>
+        </div>
+
+    </div>
+
+    <div class="psn-initiative">
+
+    </div>
 
 <!-- REFERENCES:
 https://nces.ed.gov/blogs/nces/post/why-do-parents-choose-schools-for-their-children
@@ -106,7 +165,4 @@ https://www.greatschools.org/illinois/chicago/city-of-chicago-school-district-29
 https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Profile-Information-/9a5f-2r4p
 https://data.cityofchicago.org/Education/Chicago-Public-Schools-Safe-Passage-Routes-SY2122/mnq7-pv6v
 https://bl.ocks.org/sngrasso/d3a35678a675d3b5d738f9d556bbb35e
-https://d3-legend.susielu.com/
-
-
--->
+https://d3-legend.susielu.com/ -->

@@ -67,8 +67,6 @@ export class BarChart extends BaseChart {
             var textB = b.index.toUpperCase();
             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         });
-
-        // console.log(this.converted_susbet)
         
         this.xScale = this.add_Xscale()
         this.yScale = this.add_Yscale()

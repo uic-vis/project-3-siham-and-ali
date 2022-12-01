@@ -62,10 +62,9 @@ export class LineChart extends BaseChart {
 
     add_data(history) {
         for (const feature of history) {
-            // console.log(feature)
             var subset = this.generate_subset(feature.area_num_1)
             var subset_value_count = this.get_value_count(subset)
-            // console.log(subset_value_count)
+
             this.converted_subset = this.convert_datatype(subset_value_count)
 
             this.converted_subset.sort(function(a, b) {

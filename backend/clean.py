@@ -3,7 +3,7 @@ import common_mods as cm
 
 def clean_data(data, type_=None):
     init_data = preprocess_data(data)
-    subset_data = get_subset(init_data, 2017, 2022)
+    subset_data = get_subset(init_data, 2016, 2023)
 
     if type_ is None:
         cleaned_data_1 = clean_theft(subset_data)

@@ -5,7 +5,7 @@ export class BaseChart {
         this.agg_col = agg_col;
         this.main_svg = svg;
         }
-    
+    //SET EMPTY AXES TO SHOW PLOTS AND NOT EMPTY SPACES....
     generate_subset(value) {
         const subset_data = this.plot_data.filter(crime => crime[this.filter_col] == value)
         return subset_data
