@@ -13,7 +13,9 @@
     <script src="/map_files/streets.js"></script>
     <script src="/map_files/schools.js"></script>
     <script src="/map_files/comm_zipcode.js"></script>
+    <script src="/map_files/guncrimes.js"></script>
     <script type="module" src="/scripts/project3.js"></script>
+    <script type="module" src="/scripts/project2.js"></script>
     <script type="module" src="/scripts/main.js"></script>
     <link href="/styles/main.css" rel="stylesheet" />
 
@@ -153,16 +155,92 @@
     </div>
 
     <div class="psn-initiative">
+        <p id="para-1">
+            Finally Gun violence has resulted in loss of many lives and has left a devastating effect on the families
+            of the victims. Looking at the crimes rates across the country, the government of United States launched
+            the "Project Safe Neighbourhood (PSN)" initiative which brought together the law enforcement agencies at
+            the federal, state, and local level and various researchers and community agencies to create strategic
+            plans in the form of campaigns and school based programs.
+        </p>
+
+        <p id="para-2">
+            The program, launched in 2001, is mainly targeted towards young gun offenders and ex-offenders in the 
+            community to raise awarness about the repercussions and punishments associated with gun violence.
+        </p>
+        
+        <p id="para-3">
+            In the city of Chicago, the PSN initiative has been launched in neighbourhoods with high gun violence
+            with the aim to reduce gun violence.
+        </p>
+
+        <p id="para-4">
+            In this analysis, we aim to verify the success of the PSN initiative across the city of Chicago., 
+        </p>
+    
+        <div id="gunviolence"></div>
+
+        <div id="dropdown">
+            <label for="year1">Select any Year:</label>
+            <select name="year1" id="year1">
+            <option> ---Choose a year--- </option> 
+            <option value="17" selected>2017</option>
+            <option value="18">2018</option>
+            <option value="19">2019</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            </select>
+
+            <label for="year2">Select any Year:</label>
+            <select name="year2" id="year2">
+            <option> ---Choose a year--- </option> 
+            <option value="17">2017</option>
+            <option value="18" selected>2018</option>
+            <option value="19">2019</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            </select>
+
+            <label for="year3">Select any Year:</label>
+            <select name="year3" id="year3">
+            <option> ---Choose a year--- </option> 
+            <option value="17">2017</option>
+            <option value="18">2018</option>
+            <option value="19" selected>2019</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            </select>
+
+            <label for="year4">Select any Year:</label>
+            <select name="year4" id="year4">
+            <option> ---Choose a year--- </option> 
+            <option value="17">2017</option>
+            <option value="18">2018</option>
+            <option value="19">2019</option>
+            <option value="20" selected>2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            </select>
+        </div>
 
     </div>
 
-<!-- REFERENCES:
-https://nces.ed.gov/blogs/nces/post/why-do-parents-choose-schools-for-their-children
-https://www.edweek.org/policy-politics/opinion-what-do-parents-look-for-when-choosing-a-school/2021/09
-https://www.edchoice.org/what-we-do/research/schooling-in-america-polling-dashboard-2/4
-https://www.greatschools.org/school-district-boundaries-map/
-https://www.greatschools.org/illinois/chicago/city-of-chicago-school-district-299/
-https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Profile-Information-/9a5f-2r4p
-https://data.cityofchicago.org/Education/Chicago-Public-Schools-Safe-Passage-Routes-SY2122/mnq7-pv6v
-https://bl.ocks.org/sngrasso/d3a35678a675d3b5d738f9d556bbb35e
-https://d3-legend.susielu.com/ -->
+    <div class="references">
+        <p>
+            <h3>References</h3>
+            <ul>
+                <li>https://nces.ed.gov/blogs/nces/post/why-do-parents-choose-schools-for-their-children</li>
+                <li>https://www.edweek.org/policy-politics/opinion-what-do-parents-look-for-when-choosing-a-school/2021/09</li>
+                <li>https://www.edchoice.org/what-we-do/research/schooling-in-america-polling-dashboard-2/4</li>
+                <li>https://www.greatschools.org/school-district-boundaries-map/</li>
+                <li>https://www.greatschools.org/illinois/chicago/city-of-chicago-school-district-299/</li>
+                <li>https://data.cityofchicago.org/Education/Chicago-Public-Schools-School-Profile-Information-/9a5f-2r4p</li>
+                <li>https://data.cityofchicago.org/Education/Chicago-Public-Schools-Safe-Passage-Routes-SY2122/mnq7-pv6v</li>
+                <li>https://bl.ocks.org/sngrasso/d3a35678a675d3b5d738f9d556bbb35e</li>
+                <li>https://d3-legend.susielu.com/</li>
+            </ul>
+        </p>
+    </div>
+</body>

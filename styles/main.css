@@ -62,6 +62,7 @@ html {
 
 .project-1 #chicago-map {
     float: left;
+    margin-left: 50px;
 }
 
 .explore-schools p {
@@ -100,6 +101,7 @@ html {
 }
 
 .project-3 #chicago-map-2 {
+    margin-left: 50px;
     margin-right: 100px;
     flex: 1;
 }
@@ -107,6 +109,36 @@ html {
 .project-3 #single-community-zoom {
     margin-left: 30px;
     margin-right: 100px;
+}
+
+.psn-initiative p {
+    text-align: justify;
+    font-size: 20px;
+    padding-right: 13%;
+    padding-left: 13%;
+}
+
+.psn-initiative #para-1 {
+    margin-top: 50px;
+}
+
+.psn-initiative #dropdown {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.psn-initiative #gunviolence {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.references ul {
+    text-align: justify;
+    font-size: 20px;
+    padding-right: 13%;
+    padding-left: 13%;
 }
 
 .legend i {

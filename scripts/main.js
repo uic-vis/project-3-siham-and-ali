@@ -7,6 +7,7 @@ import sexual_assault_data from "../Sexual Assault.json" assert {type: 'json'};
 import {BarChart} from './barchart.js';
 import {LineChart} from './linechart.js';
 import {create_visualtizations_2} from './project3.js';
+import {create_visualtizations_3} from "./project2.js";
 
 let current_layer_val;
 let current_layer;
@@ -21,7 +22,7 @@ let bar_chart;
 let bar_chart_svg = d3.selectAll('#single-community')
                       .append('svg')
                       .attr('width', chart_width + margin.left + margin.right)
-                      .attr('height', chart_height + margin.top + margin.bottom)
+                      .attr('height', chart_height + margin.top + margin.bottom);
 
 let line_chart;
 let community_history = new Set();
@@ -198,6 +199,7 @@ function create_visualtizations() {
 function init() {
     create_visualtizations()
     create_visualtizations_2()
+    create_visualtizations_3()
 }
 
 window.onload = init;
