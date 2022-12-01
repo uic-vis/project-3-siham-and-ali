@@ -101,7 +101,7 @@ html {
 }
 
 .project-3 #chicago-map-2 {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     margin-right: 100px;
     flex: 1;
 }
