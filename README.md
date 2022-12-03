@@ -47,7 +47,7 @@ Finally, the communities data set was also stored in an array of objects. The co
 
 ## Webpage Desciption:
 
-# Crime Types Cmparisons:
+### Crime Types Cmparisons:
 In the following map for Chicago. The user can zoom in and out to better see the communities. The user can also select which crime type they want to see on the map by choosing from the top left corner list. The crime types in the map list are total crimes, theft, narcotics, weapons, kidnapping and sexual assult
 
 ![image](https://user-images.githubusercontent.com/89785579/205424728-7a5f8a8c-be38-46e6-be5e-22d5c45e2351.png)
@@ -61,7 +61,7 @@ The linear chart compares the the communities chosen through out the user experi
 
 The bar chart and the linear chart have the same x and y units.
 
-# Crimes and Schools Locations:
+### Crimes and Schools Locations:
 
 In the maps below. The user can see the crimes spots and the school locations in the communties. The user need tp press on the community to show its details. Also, the user can choose a specific month and year first, and then choose the comunity to see the data wanted. The crimes dots are colored depening on the crime type. The user can see the school's name by hovering over the school pin on the map.
 
