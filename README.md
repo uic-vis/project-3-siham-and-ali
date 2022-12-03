@@ -45,14 +45,14 @@ Two functions where created to store each community with its crime rate in an ar
 Finally, the communities data set was also stored in an array of objects. The combination of the data sets and the data stored in the arrays was later used for the visual encoding.
 
 
-# Webpage Desciption:
+## Webpage Desciption:
 
-
-In the above map for Chicago. The user can zoom in and out to better see the communities. The user can also select which crime type they want to see on the map by choosing from the top left corner list. The crime types in the map list are total crimes, theft, narcotics, weapons, kidnapping and sexual assult
+# Crime Types Cmparisons:
+In the following map for Chicago. The user can zoom in and out to better see the communities. The user can also select which crime type they want to see on the map by choosing from the top left corner list. The crime types in the map list are total crimes, theft, narcotics, weapons, kidnapping and sexual assult
 
 ![image](https://user-images.githubusercontent.com/89785579/205424728-7a5f8a8c-be38-46e6-be5e-22d5c45e2351.png)
 
-First choose the crime type from the list. The map will show different colors densities depedning on the total of the crime chosen in each community. Then, press on a certain community to see the following linked visualiztion:
+First choose the crime type from the list. The map will show different colors densities depending on the total of the crime chosen in each community. Then, press on a certain community to see the following linked visualiztion:
 ![image](https://user-images.githubusercontent.com/89785579/205425114-d02d0589-bb9f-48b7-a450-ee0eb2ce6f30.png)
 
 The bar chart shows the different values of the different crime types in that community. If the crime chosen from the map list was total crimes, the bar chart will compare the main types. If the crime type chosen was different, the bar chart will compare the values of more specific types of crimes that fall under the type chosen.
@@ -61,9 +61,9 @@ The linear chart compares the the communities chosen through out the user experi
 
 The bar chart and the linear chart have the same x and y units.
 
----------------------------------------------------------------
+# Crimes and Schools Locations:
 
-In the maps above. The user can see the crimes spots and the school locations in the communties. The user need tp press on the community to show its details. Also, the user can choose a specific month and year first, and then choose the comunity to see the data wanted. The crimes dots are colored depening on the crime type. The user can see the school's name by hovering over the school pin on the map.
+In the maps below. The user can see the crimes spots and the school locations in the communties. The user need tp press on the community to show its details. Also, the user can choose a specific month and year first, and then choose the comunity to see the data wanted. The crimes dots are colored depening on the crime type. The user can see the school's name by hovering over the school pin on the map.
 
 ![image](https://user-images.githubusercontent.com/89785579/205425166-0778dd40-295e-4b01-af97-c92251be64f2.png)
 
