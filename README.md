@@ -47,7 +47,7 @@ Finally, the communities data set was also stored in an array of objects. The co
 
 ## Webpage Desciption:
 
-### Crime Types Cmparisons:
+### Crime Types Comparisons:
 In the following map for Chicago. The user can zoom in and out to better see the communities. The user can also select which crime type they want to see on the map by choosing from the top left corner list. The crime types in the map list are total crimes, theft, narcotics, weapons, kidnapping and sexual assult
 
 ![image](https://user-images.githubusercontent.com/89785579/205424728-7a5f8a8c-be38-46e6-be5e-22d5c45e2351.png)
